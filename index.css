@@ -142,27 +142,24 @@ header button {
 }
 
 .balance_head_wrap {
-    max-width: 1000px;
+    max-width: 830px;
     margin: 0 auto;
-}
-
-.balance_description {
-    text-align: center;
     padding-top: 230px;
+    text-align: center;
 }
 
-.balance_title {
+.balance_head_title {
     font-size: 65px;
     font-weight: 700;
 }
 
-.balance_text {
+.balance_head_text {
     padding: 20px 0 40px 0;
     font-size: 22px;
     line-height: 33px;
 }
 
-.balance_test_btn {
+.green_btn {
     color: #fff;
     background-color: #00C064;
     width: 374px;
@@ -172,4 +169,93 @@ header button {
     border-radius: 4px;
     border: none;
     margin-bottom: 70px;
+}
+
+.img_balance_hero {
+    max-width: 830px;
+}
+
+
+.container_balance_main {
+    width: 100%;
+}
+
+.balance_items_wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.balance_item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 228px;
+}
+
+.report_img_bg {
+    background-color: #F9F9F9;
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.img_flower {
+    margin-top: -20px;
+}
+
+.report_text {
+    font-size: 32px;
+    line-height: 48px;
+    width: 900px;
+}
+
+.balance_description{
+    max-width: 500px;
+    padding: 0 40px;
+}
+
+.balance_item_title {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.balance_item_text {
+    font-size: 22px;
+    line-height: 33px;
+    padding-top: 20px;
+}
+
+
+.video {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.video_header {
+    max-width: 946px;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #333B4D;
+}
+
+.circle_wrap {
+    display: flex;
+    gap: 8px;
+    padding: 14px 20px;
+}
+
+.balance_accounting_in_adesk {
+    max-width: 946px;
+    margin: 0 auto;
+    padding: 250px 20px;
+    text-align: center;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #051534;
 }
