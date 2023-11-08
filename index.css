@@ -12,6 +12,9 @@
 
 header {
     width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
 }
 
 .container_header {
@@ -107,7 +110,7 @@ header button {
 }
 
 .sign_in_btn:hover {
-    background-color: black;
+    background-color: #051534;
     transition: background-color 0.5s ease-in-out;
     color: white;
 }
@@ -132,3 +135,41 @@ header button {
     font-size: 17px;
 }
 
+
+.container_balance_head {
+    width: 100%;
+    background-color: #FBFBFB;
+}
+
+.balance_head_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.balance_description {
+    text-align: center;
+    padding-top: 230px;
+}
+
+.balance_title {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.balance_text {
+    padding: 20px 0 40px 0;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.balance_test_btn {
+    color: #fff;
+    background-color: #00C064;
+    width: 374px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 70px;
+}
