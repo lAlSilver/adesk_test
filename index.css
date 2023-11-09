@@ -12,7 +12,6 @@
 header {
     width: 100%;
     background-color: white;
-    color: #051534;
     position: fixed;
     z-index: 1;
 }
@@ -23,6 +22,7 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .header_menu {
@@ -39,8 +39,9 @@ header {
 
 .header_list {
     display: flex;
-    list-style: none;
     align-items: center;
+    gap: 30px;
+    list-style: none;
 }
 
 .list_wrap {
@@ -54,10 +55,6 @@ header {
 .header_list a, .demo_wrap a {
     text-decoration: none;
     font-size: 18px;
-}
-
-.header_list li {
-    margin-right: 30px;
 }
 
 .record_demo_wrap {
@@ -92,6 +89,7 @@ header {
 .header_action {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 header button {
@@ -139,7 +137,6 @@ header button {
 .container_balance_head {
     width: 100%;
     background-color: #FBFBFB;
-    color: #051534;
 }
 
 .balance_head_wrap {
@@ -184,6 +181,7 @@ header button {
 .balance_items_wrap {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .balance_item {
@@ -213,7 +211,6 @@ header button {
 
 .balance_description{
     max-width: 500px;
-    padding: 0 40px;
 }
 
 .balance_item_title {
@@ -251,7 +248,7 @@ header button {
 .balance_accounting_in_adesk {
     max-width: 946px;
     margin: 0 auto;
-    padding: 250px 20px;
+    padding: 250px 0px;
     text-align: center;
 }
 
@@ -292,6 +289,7 @@ footer ul {
     font-size: 16px;
     line-height: 19px;
     max-width: 261px;
+    color: white;
 }
 
 footer ul li, footer div ul {
@@ -374,4 +372,63 @@ footer ul li a:hover {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .header_list {
+        display: none;
+    }
+
+    .balance_item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .balance_head_wrap {
+        padding-top: 150px;
+    }
+
+    video, .video_header {
+        max-width: 708px;
+    }
+
+    .balance_accounting_in_adesk {
+        padding: 200px 0;
+    }
+
+    .burger_icon {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        padding: 0 20px;
+        display: block;
+    }
+    
+    .btn_burger_icon {
+        /* position: absolute; */
+        width: 24px;
+        height: 2px;
+        background: black;
+    }
+    
+    .btn_burger_icon::before {
+        content: "";
+        width: 24px;
+        height: 2px;
+        background: black;
+        top: 8px;
+        position: absolute;
+    }
+    
+    .btn_burger_icon::after {
+        content: "";
+        width: 24px;
+        height: 2px;
+        background: black;
+        top: 16px;
+        position: absolute;
+    }
 }
