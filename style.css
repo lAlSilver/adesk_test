@@ -146,18 +146,18 @@ header button {
     text-align: center;
 }
 
-.balance_head_title {
+.balance_title {
     font-size: 65px;
     font-weight: 700;
 }
 
-.balance_head_text {
+.balance_text {
     padding: 20px 0 40px 0;
     font-size: 22px;
     line-height: 33px;
 }
 
-.green_btn {
+.enter_btn {
     color: #fff;
     background-color: #00C064;
     width: 374px;
@@ -169,8 +169,12 @@ header button {
     margin-bottom: 70px;
 }
 
+.length {
+    width: 289px;
+}
+
 .img_balance_hero {
-    max-width: 830px;
+    width: 100%;
 }
 
 
@@ -186,8 +190,8 @@ header button {
 
 .balance_item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
     padding-top: 228px;
 }
 
@@ -206,7 +210,7 @@ header button {
 .report_text {
     font-size: 32px;
     line-height: 48px;
-    width: 900px;
+    max-width: 900px;
 }
 
 .balance_description{
@@ -225,8 +229,12 @@ header button {
     padding-top: 20px;
 }
 
+.balance_img img{
+    width: 100%;
+}
 
-.video {
+
+.container_video {
     text-align: center;
     padding-top: 60px;
 }
@@ -237,6 +245,10 @@ header button {
     height: 40px;
     border-radius: 15px 15px 0px 0px;
     background-color: #333B4D;
+}
+
+video {
+    width: 100%;
 }
 
 .circle_wrap {
@@ -288,7 +300,7 @@ footer ul {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
-    max-width: 261px;
+    width: 261px;
     color: white;
 }
 
@@ -430,5 +442,18 @@ footer ul li a:hover {
         background: black;
         top: 16px;
         position: absolute;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .footer_items {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .footer_items ul {
+        width: 45%;
     }
 }
