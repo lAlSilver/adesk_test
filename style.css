@@ -18,7 +18,7 @@ header {
 
 .container_header {
     max-width: 1920px;
-    padding: 15px 28px;
+    padding: 15px 12px 15px 28px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,7 @@ header {
 
 .list_wrap {
     display: flex;
+    cursor: pointer;
 }
 
 .list_wrap div {
@@ -137,7 +138,7 @@ header button {
 .balance_title_wrap {
     max-width: 946px;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 196px;
     text-align: center;
 }
 
@@ -190,7 +191,8 @@ header button {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 200px 30px;
+    align-items: center;
+    padding: 228px 30px 200px 30px;
 }
 
 .report_img_bg {
@@ -224,7 +226,7 @@ header button {
 }
 
 ._wrap_item {
-    padding-top: 200px;
+    padding-top: 193px;
 }
 
 ._padding_item {
@@ -239,6 +241,11 @@ header button {
     font-size: 45px;
     font-weight: 600;
     line-height: 50px;
+    padding: 0px;
+}
+
+._padding_title {
+    padding: 0px 110px;
 }
 
 .balance_item_text {
@@ -247,10 +254,20 @@ header button {
     padding-top: 20px;
 }
 
+.title_start {
+    font-size: 55px;
+    line-height: 60.5px;
+    margin-top: 52px;
+}
+
+
+.text_start {
+    padding: 23px 70px 30px 70px;
+}
 
 .container_video {
     text-align: center;
-    padding: 60px 0 220px 0;
+    padding: 65px 0 272px 0;
     max-width: 946px;
     margin: 0 auto;
 }
@@ -290,20 +307,20 @@ footer {
     margin-top: 180px;
 }
 
-.footer_flex {
-    display: flex;
-}
-
 .footer_items {
     display: flex;
+    justify-content: space-between;
 }
 
-
+.footer_item {
+    display: flex;
+    gap: 32px;
+}
 
 .footer_logo {
     display: flex;
     gap: 15px;
-    padding: 60px 0;
+    padding: 60px 0 43px 0;
 }
 
 .logo_text {
@@ -316,7 +333,6 @@ footer ul {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
-    width: 261px;
     color: white;
 }
 
@@ -332,10 +348,6 @@ footer ul li a {
 
 footer ul li a:hover {
     color: white;
-}
-
-.footer_item {
-    display: flex;
 }
 
 .contacts_hidden {
@@ -354,7 +366,7 @@ footer ul li a:hover {
 }
 
 .container_contacts {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 
@@ -362,12 +374,19 @@ footer ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 94px 0 0 6px;
 }
 
-.cards, .app {
+.cards {
     display: flex;
     gap: 20px;
     padding-bottom: 20px;
+}
+
+.app {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 19px;
 }
 
 .app a {
@@ -385,7 +404,7 @@ footer ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 24px 0 24px 3px;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
 
@@ -407,7 +426,7 @@ footer ul li a:hover {
 .social {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 28px;
 }
 
 .burger_icon {
@@ -571,10 +590,17 @@ footer ul li a:hover {
         font-size: 18px;
     }
 
+    .title_start {
+        margin: 0;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
     .length {
         width: 345px;
         height: 60px;
         font-size: 24px;
+        margin: 0;
     }
 
     .report_text {
@@ -616,8 +642,21 @@ footer ul li a:hover {
         padding: 0 15px;
     }
 
+    .footer_logo {
+        padding: 40px 0 30px 0;
+    }
+
     footer ul li, footer ul div, .course_wrap, .cards {
         display: none;
+    }
+
+    footer ul {
+        cursor: pointer;
+    }
+
+    footer ul img {
+        float: right;
+        padding: 4px 4px 0 5px;
     }
 
     .footer_items, .documents {
@@ -625,6 +664,10 @@ footer ul li a:hover {
         flex-direction: column;
         padding: 0;
         gap: 0;
+    }
+
+    .cards_app {
+        padding: 0;
     }
 
     .app {
@@ -646,5 +689,10 @@ footer ul li a:hover {
 
     .documents div {
         color: white;
+    }
+
+    .footer_item {
+        display: block;
+        width: 100%;
     }
 }
