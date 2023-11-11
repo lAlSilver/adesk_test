@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Graphik LCG';
+
 }
 
 header {
@@ -53,7 +54,7 @@ header {
     padding: 0 4px 0 5px;
 }
 
-.header_list a, .demo_wrap a {
+.header_list a, .demo_wrap a, .app a {
     text-decoration: none;
     font-size: 18px;
 }
@@ -163,7 +164,7 @@ header button {
 }
 
 .enter_btn {
-    color: #fff;
+    color: white;
     background-color: #00C064;
     width: 374px;
     height: 60px;
@@ -182,7 +183,7 @@ header button {
     width: 100%;
 }
 
-.img_balance_hero_mobile {
+.img_balance_hero_mobile, .contacts_hidden, .burger_icon {
     display: none;
 }
 
@@ -216,7 +217,6 @@ header button {
 .balance_items_wrap {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .balance_item {
@@ -227,10 +227,6 @@ header button {
 
 ._wrap_item {
     padding-top: 193px;
-}
-
-._padding_item {
-    padding-bottom: 50px;
 }
 
 .balance_item_description{
@@ -244,31 +240,14 @@ header button {
     padding: 0px;
 }
 
-._padding_title {
-    padding: 0px 110px;
-}
-
 .balance_item_text {
     font-size: 22px;
     line-height: 33px;
     padding-top: 20px;
 }
 
-.title_start {
-    font-size: 55px;
-    line-height: 60.5px;
-    margin-top: 52px;
-}
-
-
-.text_start {
-    padding: 23px 70px 30px 70px;
-}
-
 .container_video {
-    text-align: center;
-    padding: 65px 0 272px 0;
-    max-width: 946px;
+    padding: 65px 0 220px 0;
     margin: 0 auto;
 }
 
@@ -350,10 +329,6 @@ footer ul li a:hover {
     color: white;
 }
 
-.contacts_hidden {
-    display: none;
-}
-
 .course_wrap {
     display: flex;
     align-items: center;
@@ -429,10 +404,6 @@ footer ul li a:hover {
     gap: 28px;
 }
 
-.burger_icon {
-    display: none;
-}
-
 
 @media screen and (max-width: 1500px) {
     .header_list {
@@ -440,45 +411,42 @@ footer ul li a:hover {
     }
 
     .container_balance_report {
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: center;
-        gap: 40px;
     }
 
-    .balance_item {
+    .container_video {
+        padding: 65px 30px 150px 30px;
+    }
+
+    .report_text, .balance_item, .container_video  {
+        text-align: center;
+    }
+
+    .balance_item, .container_balance_report {
         display: flex;
         flex-direction: column;
-        text-align: center;
         gap: 40px;
     }
 
-    .container_balance_report {
-        padding: 150px 30px;
+    .balance_item_description {
+        max-width: inherit;
     }
 
     ._wrap_item {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        padding-top: 150px;
     }
 
     .container_balance_title {
         padding-top: 50px;
     }
 
-    .balance_title_wrap {
+    .balance_title_wrap, ._wrap_item, .container_balance_report  {
         padding-top: 150px;
     }
 
-    video, .video_header, .report_text, .balance_title_wrap {
-        max-width: 708px;
-    }
-
     .burger_icon {
-        width: 24px;
         height: 24px;
         position: relative;
         padding-left: 20px;
@@ -486,7 +454,7 @@ footer ul li a:hover {
         top: 3px;
     }
     
-    .btn_burger_icon {
+    .btn_burger_icon, .btn_burger_icon::before, .btn_burger_icon::after {
         width: 24px;
         height: 2px;
         background: black;
@@ -494,30 +462,24 @@ footer ul li a:hover {
     
     .btn_burger_icon::before {
         content: "";
-        width: 24px;
-        height: 2px;
-        background: black;
         top: 8px;
         position: absolute;
     }
     
     .btn_burger_icon::after {
         content: "";
-        width: 24px;
-        height: 2px;
-        background: black;
         top: 16px;
         position: absolute;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .record_demo_btn {
+    .record_demo_btn, .social {
         display: none;
     }
 
     .balance_title {
-        font-style: 55px;
+        font-size: 55px;
     }
 
     .footer_items {
@@ -533,12 +495,16 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 600px) {
+    .container_balance_main {
+        padding: 0 15px;
+    }
+    
     .img_balance_hero_mobile {
         display: block;
     }    
 
-    .img_balance_hero {
-        display: none;
+    .social {
+        display: flex;
     }
 
     .enter_btn {
@@ -546,14 +512,15 @@ footer ul li a:hover {
         height: 42px;
     }
 
-    .sign_in_btn, .sign_up_btn {
+    .sign_in_btn, .sign_up_btn, .img_balance_hero {
         display: none;
     }
 
     .container_header {
         float: right;
         gap: 0;
-        width: 55%;
+        width: 62%;
+        padding: 23px 13px 14px 12px;
     }
 
     .header_logo {
@@ -561,25 +528,39 @@ footer ul li a:hover {
     }
 
     .container_balance_title {
-        padding-top: 40px 15px 0 15px;
         width: 100%;
     }
 
     .balance_title_wrap {
-        padding: 100px 15px 0 15px;
+        padding-top: 93px;
     }
 
-    .balance_text {
-        padding: 15px 0 25px 0;
+    .align_text {
+        text-align: start;
+    }
+
+    .balance_text, .balance_item_text {
+        padding: 19px 0 6px 0;
+        line-height: 27px;
     }
 
     .enter_btn {
-        margin-bottom: 40px;
+        margin-bottom: 33px;
     }
 
     .container_balance_report {
-        padding: 100px 15px;
-        gap: 20px;
+        padding: 100px 0;
+        gap: 12px;
+    }
+
+    .report_img_bg {
+        width: 168px;
+        height: 168px;
+    }
+
+    .img_flower {
+        width: 75px;
+        height: 165px;
     }
 
     .balance_title {
@@ -600,7 +581,7 @@ footer ul li a:hover {
         width: 345px;
         height: 60px;
         font-size: 24px;
-        margin: 0;
+        margin: 20px;
     }
 
     .report_text {
@@ -608,17 +589,18 @@ footer ul li a:hover {
         line-height: 33px;
     }
 
-    .balance_items_wrap {
-        padding: 0 15px;
+    .text_start, .title_start, .balance_item {
+        text-align: start;
     }
 
-    .balance_item, .balance_title_wrap {
-        text-align: start;
-        gap: 20px;
+    .balance_item {
+        gap: 7px;
     }
 
     .balance_item_title {
         font-size: 30px;
+        line-height: 36px;
+        padding: 0;
     }
 
     .balance_item_text {
@@ -630,16 +612,14 @@ footer ul li a:hover {
     }
 
     .container_video {
-        padding: 20px 0 100px 0;
+        padding: 53px 0 120px 0;
     }
 
-    ._padding_item {
-        padding-bottom: 0;
-    }
 
+/*FOOTER*/
     .footer_wrap {
-        margin-top: 100px;
-        padding: 0 15px;
+        margin-top: 80px;
+        padding: 10px 44px;
     }
 
     .footer_logo {
@@ -650,20 +630,11 @@ footer ul li a:hover {
         display: none;
     }
 
-    footer ul {
-        cursor: pointer;
-    }
-
-    footer ul img {
-        float: right;
-        padding: 4px 4px 0 5px;
-    }
-
     .footer_items, .documents {
         display: flex;
         flex-direction: column;
         padding: 0;
-        gap: 0;
+        gap: 15;
     }
 
     .cards_app {
@@ -700,11 +671,23 @@ footer ul li a:hover {
         width: 100%;
     }
 
+    
     .accordion:not(.accordion_open) .footer_link {
         display: none;
     }
 
     .accordion_open img {
         transform: rotate(180deg);
+    }
+
+    .accordion {
+        cursor: pointer;
+        font-size: 20px;
+        padding-top: 25px;
+    }
+
+    .accordion img {
+        float: right;
+        padding: 4px 4px 0 5px;
     }
 }
