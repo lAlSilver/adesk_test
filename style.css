@@ -646,7 +646,7 @@ footer ul li a:hover {
         padding: 40px 0 30px 0;
     }
 
-    footer ul li, footer ul div, .course_wrap, .cards {
+    footer ul div, .course_wrap, .cards {
         display: none;
     }
 
@@ -687,6 +687,10 @@ footer ul li a:hover {
         gap: 40px;
     }
 
+    .documents {
+        gap: 10px;
+    }
+
     .documents div {
         color: white;
     }
@@ -694,5 +698,13 @@ footer ul li a:hover {
     .footer_item {
         display: block;
         width: 100%;
+    }
+
+    .accordion:not(.accordion_open) .footer_link {
+        display: none;
+    }
+
+    .accordion_open img {
+        transform: rotate(180deg);
     }
 }
